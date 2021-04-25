@@ -6,6 +6,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+//ReadData : thred function for continously checking the socket for reading data
+
 void * ReadData(void *threadid) {
     int sockfd = *(int * )threadid;
    while(1)

@@ -8,12 +8,13 @@
 #include <netdb.h> 
 #include <iostream>
 #include <pthread.h>
+// error : For printing the errror and exit the program on error
 void error(const char *msg)
 {
     perror(msg);
     exit(0);
 }
-
+//ReadData : thred function for continously checking the socket for reading data
 void * ReadData(void *threadid) {
     int sockfd = *(int * )threadid;
    while(1)
