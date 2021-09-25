@@ -22,7 +22,7 @@ void * ReadData(void *threadid) {
 int main()
 {
     int port;
-    std::cout<<"Enter the Port";
+    std::cout<<"Enter the Port:";
     std::cin>>port;
 
     int SockHandle=socket(AF_INET,SOCK_STREAM,0);

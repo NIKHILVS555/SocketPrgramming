@@ -33,11 +33,11 @@ int main(int argc, char *argv[])
     struct hostent *server;
 
     char buffer[256];
-   
+    //testing
     std::cout<<"Enter the port number";
     std::cin>>portno;// = atoi(argv[2]);
     char serveradd[255];
-    std::cout<<"enter the server Address";
+    std::cout<<"enter the server Address:";
     std::cin>> serveradd;
     sockfd = socket(AF_INET, SOCK_STREAM, 0);
     if (sockfd < 0) 
