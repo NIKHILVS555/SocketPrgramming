@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
     struct hostent *server;
 
     char buffer[256];
-    //testing
+    
     std::cout<<"Enter the port number";
     std::cin>>portno;// = atoi(argv[2]);
     char serveradd[255];
